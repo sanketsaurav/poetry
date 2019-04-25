@@ -5,7 +5,11 @@ test_patterns = [
   'tests/*.py'
 ]
 
+exclude_patterns = [
+  'poetry/utils/_compat.py'
+]
+
 [[analyzers]]
 name = 'python'
 enabled = true
-runtime_version = '3.x.x'
+runtime_version = '2.x.x'
